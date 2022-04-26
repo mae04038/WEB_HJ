@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(247, 158, 210), rgb(158,210,247));
+}
+.title{
+    padding: 47px 0px;
+    position: relative;
+}
+.title span:first-child{
+    font-size: 50px;
+    margin-right: 15px;
+}
+.title span:nth-child(2){
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.title span:last-child { /*변경하기*/
+    /**/
+    position: absolute;
+    
+}
+
+.icons {
+    font-size: 17px;
+}
+.icons i{
+    margin-right: 4px;
+}
+.icons span{
+    padding: 0px 30px;
+}
+.icons span:nth-child(2){
+    border-width: 0px 1.5px;
+    border-style: solid;
+}

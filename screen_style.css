@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.screen {
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 6px 2px rgb(199, 198, 198);
+}
+/*
+.screen:first-child div {
+  margin-top: 8px;
+}
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+header a{
+  text-decoration-line: none;
+}
+
+.screen main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .album img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10%;
+    margin-top: 30px;
+    box-shadow: 5px 10px 10px 6px rgba(0, 0, 0, 0.1), -5px 0px 10px 6px rgba(0, 0, 0, 0.1);
+  }
+  .main-artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main-artist__title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .main-artist__singer {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+  
+  .timeline,
+  .user-music {
+    margin-top: 20px;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline__time {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+  }
+  .timeline__line {
+    display: flex;
+    position: relative;
+    /*
+    width: 250px;
+    height: 15px;
+    border-top: 3px solid rgba(0, 0, 0, 0.2);
+    */
+  }
+  .timeline__line1 {
+    width: 150px;
+    height: 15px;
+    border-top: 3px solid black;
+  }
+  .timeline__line2{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top : -3px;
+    left: 150px;
+  }
+  .timeline__line3 {
+    width: 90px;
+    height: 15px;
+    border-top: 3px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-music i {
+    margin: 0 15px;
+  }
+  .user-music i:first-child, 
+  .user-music i:last-child {
+    color: rgba(0, 0, 0, 0.2);
+  }

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+    padding:30px;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.genre__row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.genre__header {
+    margin-bottom: 20px;
+}
+.genre__header span {
+    font-size: 30px;
+    font-weight: 900;
+}
+.genre-album {
+    /*
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+*/
+    display: flex;
+    margin-left: 10px;
+    overflow: auto;
+
+   
+}
+.genre-album::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+.genre-album::-webkit-scrollbar-thumb{
+    background-color: #B0B0B0;
+    border-radius: 2px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.genre-album::-webkit-scrollbar-track{
+    background-color: #E0E0E0;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px white;
+}
+
+.genre-album-img {
+    position: relative;
+    padding: 15px;
+    
+}
+.genre-album-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px 2px rgb(199, 198, 198);
+}
+.genre-album-img img:hover {
+    opacity: 0.3; 
+}
+.genre-album-img:hover .genre-album-info>span{
+    opacity: 1;
+}
+.genre-album-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.genre-album-info span{
+    opacity: 0;
+}
+.genre-album-info span:first-child{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
